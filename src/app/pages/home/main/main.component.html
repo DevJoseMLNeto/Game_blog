@@ -1,1 +1,24 @@
 <app-menu-bar></app-menu-bar>
+<ng-container *ngFor="let i of apiSimulationMainNotices" class="principal" >
+    <ng-template style="position: relative;" [ngIf]="i.value" >
+        <div class="cortina"></div>
+        <h4 class="autorM">Escrito por: {{i.autor}}</h4>
+        <h1 class="tituloM">{{i.titulo}}</h1>
+        <img [src]="i.url" alt="">
+    </ng-template>
+
+</ng-container>
+<div class="secundarioBarr">
+<ng-container *ngFor="let i of apiSimulationSecundaryNotices" >
+    <ng-template [ngIf]="i.value" >
+    <div class="secundario">
+        <img style="height: 100%;" [src]="i.url" alt="">
+            <div class="infoS">
+                <h3>{{i.titulo}}</h3>
+                <h5>Autor: {{i.autor}}</h5>
+            </div>
+    </div>
+    </ng-template>
+</ng-container>
+<button>></button>
+</div>
