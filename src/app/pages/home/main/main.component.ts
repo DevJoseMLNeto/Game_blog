@@ -18,8 +18,12 @@ export class MainComponent {
   ]
 
   apiSimulationMainNotices: any[]=[
-  {url: "./../../../../assets/trofeu_gameawards.webp", titulo: "Mais um ano em que GOTY incomoda a comunidade dos games", autor: "José Morais", value: true},
-  {url: "./../../../../assets/PS5-PRO-DESTACADA.png.webp", titulo: "Para alguns apenas um pequeno passo, para outros", autor: "José Morais", value: false}
+  {url: "./../../../../assets/trofeu_gameawards.webp", titulo: "Mais um ano em que GOTY incomoda a comunidade dos games", autor: "José Morais", value: false},
+  {url: "./../../../../assets/PS5-PRO-DESTACADA.png.webp", titulo: "Para alguns apenas um pequeno passo, para outros inovação", autor: "José Morais", value: true}
   ]
+
+  secundaryMenu(){
+    alert("OK")
+  }
 
 }
