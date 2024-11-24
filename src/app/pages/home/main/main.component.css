@@ -1,10 +1,11 @@
 .principal{
-    height: 60%;
+    height: 67%;
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
 
 .secundarioBarr{
     display: flex;
@@ -42,12 +43,18 @@
 }
 
 .cortina{
-    height: 67%;
+    height: 100%;
     width: 35%;
     position: absolute;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.84375) 55%, rgba(0,0,0,0) 100%);
-    top: 7%;
+    top: 0%;
+}
+
+.ativo{
+    width: 55% !important;
+    background-color: red !;
+    transition-duration: 200ms;
 }
 
 .tituloM{
@@ -58,11 +65,18 @@
     top: 30%;
     left: 1%;
     font-size: 3rem;
-    width: 30%;
+    width: 44%;
     text-align: end;
     text-wrap: wrap;
     font-family: 'Merriweather', Arial, sans-serif;
 
+}
+
+.tituloMaior{
+    scale: 1.1;
+    transition-duration: 200ms;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .autorM{
@@ -70,20 +84,50 @@
     color: #f5f5f5;
     font-family:'Merriweather' , Arial, sans-serif;
     top: 15%;
-    left: 1%;
+    left: 3%;
     color: #bebebe;
     font-size: 1.0em;
 }
 
-
-img{
-    height: 67%;
-    width: 100%;
+.autorMaior{
+    scale: 1.2;
+    transition-duration: 200ms;
 }
 
-button{
-    width: 2%;
+
+img{
+    height: 100%;
+    width: 100%;
+}
+#btn_main{
+    background-color: transparent;
+    position: absolute;
+    right: 1%;
+    top: 43%;
+    border: none;
+}
+
+#btn_barSecundary{
+    width: 5%;
     background-color: transparent;
     margin-left: auto;
+    cursor: pointer;
+    height: fit-content;
+    margin: auto;
+    border-radius: 11px;
+    border: none;
+}
+
+.arrowForward{
+    font-size: 55px;
+    color: rgb(130, 154, 159);
+}
+
+.arrowForwardMain{
+    font-size: 79px;
+    color: #ffffffa7;
+}
+.arrowForwardMain:hover{
+    color: #ffffff;
     cursor: pointer;
 }

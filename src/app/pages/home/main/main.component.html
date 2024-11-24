@@ -1,10 +1,17 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
+</head>
+
 <app-menu-bar></app-menu-bar>
-<ng-container *ngFor="let i of apiSimulationMainNotices" class="principal" >
+<ng-container *ngFor="let i of apiSimulationMainNotices" class="" >
     <ng-template style="position: relative;" [ngIf]="i.value" >
-        <div class="cortina"></div>
-        <h4 class="autorM">Escrito por: {{i.autor}}</h4>
-        <h1 class="tituloM">{{i.titulo}}</h1>
-        <img [src]="i.url" alt="">
+        <div class="principal">
+        <div class="cortina" [ngClass]="mouseIMG" ></div>
+        <h4 class="autorM" [ngClass]="autorM" >Escrito por: {{i.autor}}</h4>
+        <h1 class="tituloM" [ngClass]="tituloM"   (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">{{i.titulo}}</h1>
+        <button (click)="primaryMenu()" id="btn_main"><span class="material-symbols-outlined arrowForwardMain">arrow_forward_ios</span></button>
+        <img class="imgMain" [src]="i.url" alt="">
+        </div>   
     </ng-template>
 
 </ng-container>
@@ -20,5 +27,5 @@
     </div>
     </ng-template>
 </ng-container>
-<button (click)="secundaryMenu()" id="btn_barSecundary">></button>
+<button (click)="secundaryMenu()" id="btn_barSecundary"><span class="material-symbols-outlined arrowForward">arrow_forward_ios</span></button>
 </div>

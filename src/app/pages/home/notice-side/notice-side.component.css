@@ -1,0 +1,34 @@
+main{
+    margin: 0 auto;
+    padding: 20px;
+    width: 30vw;
+    height: 95vh;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+input{
+    height: 6%;
+    display: block;
+    width: 100%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+.imgConteiner{
+    height: 50%;
+    width: 50%;
+    margin: 50% auto;
+}
+
+img{
+    height: 65%;
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+}
