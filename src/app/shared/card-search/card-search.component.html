@@ -1,1 +1,12 @@
-<p>card-search works!</p>
+
+<ng-container  *ngFor="let i of game" >
+    <ng-template [ngIf]="i.value" >
+    <div class="small_card">
+        <img style="height: 100%;" [src]="i.url" alt="">
+            <div class="infoS">
+                <h3>{{i.title}}</h3>
+                <h5>Autor:{{i.autor}}</h5>
+            </div>
+    </div>
+    </ng-template>
+</ng-container>

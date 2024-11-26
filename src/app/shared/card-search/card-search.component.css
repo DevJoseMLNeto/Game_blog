@@ -1,0 +1,28 @@
+
+
+.small_card{
+    height: 30%;
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    margin: 30px auto;
+    cursor: pointer;
+    background-color: black;
+    color: #f5f5f5;
+    overflow: hidden;
+}
+
+.infoS{
+    padding: 15px 5px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}

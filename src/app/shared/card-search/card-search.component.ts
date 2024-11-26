@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-card-search',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-search.component.css']
 })
 export class CardSearchComponent {
+    
+
+
+  @Input() game : any[] = []
+  constructor(){}
+
 
 }

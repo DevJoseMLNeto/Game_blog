@@ -32,3 +32,14 @@ img{
 h3{
     text-align: center;
 }
+
+button{
+    height: 35px;
+    width: 250px;
+    margin: 20px auto;
+    border: none;
+    display: block;
+    background-color: #6d71f5;
+    border-radius: 12px;
+    cursor: pointer;
+}

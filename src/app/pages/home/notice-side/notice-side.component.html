@@ -1,11 +1,15 @@
 <main>
 
-    <input type="text" name="i_search" id="i_search" placeholder="Busque por seu game!!!">
+    <input [(ngModel)]="pesquisa" type="text" name="i_search" id="i_search" placeholder="Busque por seu game!!!">
+    <button (click)="serchGame(pesquisa, simulationApiDataNoticiesGames)">Pesquisa</button>
+    <ng-template [ngIf]="index">
     <div class="imgConteiner">
         <img src="./../../../../assets/joystickSearch.png" alt="">
         <h3>Busque por seu jogo preferido e veja as ultimas noticias!</h3>
-        <app-card-search></app-card-search>
     </div>
+    </ng-template>
+
+    <app-card-search [game]="this.game" ></app-card-search>
 
 
 

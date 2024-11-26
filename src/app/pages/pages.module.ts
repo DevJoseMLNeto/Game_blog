@@ -5,8 +5,7 @@ import { MenuBarComponent } from './home/menu-bar/menu-bar.component';
 import { NoticeSideComponent } from './home/notice-side/notice-side.component';
 import { MainComponent } from './home/main/main.component';
 import { SharedModule } from '../shared/shared.module';
-
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    FormsModule
 
   ]
 })
